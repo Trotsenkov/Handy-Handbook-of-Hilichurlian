@@ -18,7 +18,7 @@ public static class FirebaseController
     public static void SendRequest(string[] keys)
     {
         FbStatus = FirebaseStatus.Waiting;
-
+        Debug.Log("Requested " + keys[0]);
         Dictionary<string, object> defaults = new Dictionary<string, object>();
         foreach (string key in keys)
             defaults.Add(key, new object());

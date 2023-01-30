@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 using Firebase.RemoteConfig;
 using System;
 using Random = UnityEngine.Random;
+using UnityEngine.Localization.Tables;
+using UnityEngine.Localization.Settings;
+using UnityEngine.Localization;
 
 public class CheckAnswer : MonoBehaviour
 {
@@ -19,6 +22,7 @@ public class CheckAnswer : MonoBehaviour
     static quest current;
     List<Button> buttons;
     public static string lsnKey = "lsn1";
+    public string winText { get; set; }
 
     string lsn;
     public struct quest
@@ -45,7 +49,7 @@ public class CheckAnswer : MonoBehaviour
         while (FirebaseController.FbStatus != FirebaseStatus.Connected)
             yield return null;
             lsn = FirebaseRemoteConfig.DefaultInstance.GetValue(lsnKey).StringValue;
-
+            
             List<string> x = new List<string>(lsn.Split('\n'));
             quests = new List<quest>();
             for (int i = 0; i < x.Count; i++)
@@ -57,11 +61,12 @@ public class CheckAnswer : MonoBehaviour
         canvas.Find("Game").gameObject.SetActive(true);
         SetQuestions();
     }
+
     void SetQuestions()
     {
         if (quests.Count == 0)
         {
-            canvas.GetComponent<CheckAnswer>().questText.text = "Это все, ты молодец!";
+            canvas.GetComponent<CheckAnswer>().questText.text = winText;
             canvas.GetComponent<AudioSource>().clip = endClip;
             canvas.GetComponent<AudioSource>().Play();
             return;

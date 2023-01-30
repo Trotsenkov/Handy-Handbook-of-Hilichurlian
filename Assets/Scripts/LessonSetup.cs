@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 
 public class LessonSetup : MonoBehaviour
 {
-    public void  GoToLesson()
+    public byte number;
+    public void GoToLesson()
     {
-        CheckAnswer.lsnKey = transform.GetChild(0).GetComponent<TMP_Text>().text;
+        CheckAnswer.lsnKey = "lsn" + number + LocalizationManager.CurrentLocaleCode;
         SceneManager.LoadScene("SampleScene");
     }
 }

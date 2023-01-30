@@ -24,13 +24,19 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_Platform_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_RemoteConfig_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_TaskExtension_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Mono_Security_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Newtonsoft_Json_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Configuration_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Core_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Data_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Numerics_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Runtime_Serialization_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Xml_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Xml_Linq_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AnimationModule_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AssetBundleModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AudioModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_CoreModule_CodeGenModule;
@@ -52,9 +58,14 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIElementsModule_CodeGen
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIElementsNativeModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UI_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestAssetBundleModule_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_AdaptivePerformance_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_AdaptivePerformance_Samsung_Android_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Addressables_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Localization_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Profiling_Core_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_ResourceManager_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Subsystem_Registration_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_TextMeshPro_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_VisualScripting_Antlr3_Runtime_CodeGenModule;
@@ -63,7 +74,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_VisualScripting_Flow_CodeGenMo
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[44] = 
+const Il2CppCodeGenModule* g_CodeGenModules[55] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_Firebase_App_CodeGenModule),
@@ -71,13 +82,19 @@ const Il2CppCodeGenModule* g_CodeGenModules[44] =
 	(&g_Firebase_RemoteConfig_CodeGenModule),
 	(&g_Firebase_TaskExtension_CodeGenModule),
 	(&g_Mono_Security_CodeGenModule),
+	(&g_Newtonsoft_Json_CodeGenModule),
 	(&g_System_CodeGenModule),
 	(&g_System_Configuration_CodeGenModule),
 	(&g_System_Core_CodeGenModule),
+	(&g_System_Data_CodeGenModule),
+	(&g_System_Numerics_CodeGenModule),
+	(&g_System_Runtime_Serialization_CodeGenModule),
 	(&g_System_Xml_CodeGenModule),
+	(&g_System_Xml_Linq_CodeGenModule),
 	(&g_UnityEngine_AIModule_CodeGenModule),
 	(&g_UnityEngine_AndroidJNIModule_CodeGenModule),
 	(&g_UnityEngine_AnimationModule_CodeGenModule),
+	(&g_UnityEngine_AssetBundleModule_CodeGenModule),
 	(&g_UnityEngine_AudioModule_CodeGenModule),
 	(&g_UnityEngine_CodeGenModule),
 	(&g_UnityEngine_CoreModule_CodeGenModule),
@@ -99,9 +116,14 @@ const Il2CppCodeGenModule* g_CodeGenModules[44] =
 	(&g_UnityEngine_UIElementsNativeModule_CodeGenModule),
 	(&g_UnityEngine_UIModule_CodeGenModule),
 	(&g_UnityEngine_UI_CodeGenModule),
+	(&g_UnityEngine_UnityWebRequestAssetBundleModule_CodeGenModule),
+	(&g_UnityEngine_UnityWebRequestModule_CodeGenModule),
 	(&g_Unity_AdaptivePerformance_CodeGenModule),
 	(&g_Unity_AdaptivePerformance_Samsung_Android_CodeGenModule),
+	(&g_Unity_Addressables_CodeGenModule),
+	(&g_Unity_Localization_CodeGenModule),
 	(&g_Unity_Profiling_Core_CodeGenModule),
+	(&g_Unity_ResourceManager_CodeGenModule),
 	(&g_Unity_Subsystem_Registration_CodeGenModule),
 	(&g_Unity_TextMeshPro_CodeGenModule),
 	(&g_Unity_VisualScripting_Antlr3_Runtime_CodeGenModule),
@@ -113,20 +135,20 @@ const Il2CppCodeGenModule* g_CodeGenModules[44] =
 IL2CPP_EXTERN_C const Il2CppCodeRegistration g_CodeRegistration;
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	37,
+	44,
 	g_ReversePInvokeWrapperPointers,
-	31948,
+	46053,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	6357,
+	8855,
 	g_Il2CppInvokerPointers,
-	1143,
+	1630,
 	g_UnresolvedVirtualMethodPointers,
-	352,
+	511,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	44,
+	55,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

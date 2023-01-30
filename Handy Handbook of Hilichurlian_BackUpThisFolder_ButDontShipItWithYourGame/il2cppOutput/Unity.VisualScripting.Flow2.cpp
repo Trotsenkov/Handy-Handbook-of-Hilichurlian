@@ -12221,7 +12221,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnalyticsIdentifier_tE867F385ABAC820C67EC52E1
 		L_2 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_2);
 		String_t* L_3;
-		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_2);
+		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_2);
 		NullCheck(L_1);
 		L_1->___Identifier_0 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___Identifier_0), (void*)L_3);
@@ -12230,7 +12230,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnalyticsIdentifier_tE867F385ABAC820C67EC52E1
 		L_5 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_5);
 		String_t* L_6;
-		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(23 /* System.String System.Type::get_Namespace() */, L_5);
+		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(24 /* System.String System.Type::get_Namespace() */, L_5);
 		NullCheck(L_4);
 		L_4->___Namespace_1 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___Namespace_1), (void*)L_6);
@@ -21374,7 +21374,7 @@ IL_005a:
 		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(1), (uint8_t)L_39);
 		NullCheck(L_32);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_40;
-		L_40 = VirtualFuncInvoker1< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(23 /* System.Char[] System.Text.Encoding::GetChars(System.Byte[]) */, L_32, L_37);
+		L_40 = VirtualFuncInvoker1< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(24 /* System.Char[] System.Text.Encoding::GetChars(System.Byte[]) */, L_32, L_37);
 		NullCheck(L_40);
 		int32_t L_41 = 0;
 		uint16_t L_42 = (uint16_t)(L_40)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
@@ -26032,7 +26032,7 @@ IL_005a:
 		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(1), (uint8_t)L_39);
 		NullCheck(L_32);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_40;
-		L_40 = VirtualFuncInvoker1< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(23 /* System.Char[] System.Text.Encoding::GetChars(System.Byte[]) */, L_32, L_37);
+		L_40 = VirtualFuncInvoker1< CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(24 /* System.Char[] System.Text.Encoding::GetChars(System.Byte[]) */, L_32, L_37);
 		NullCheck(L_40);
 		int32_t L_41 = 0;
 		uint16_t L_42 = (uint16_t)(L_40)->GetAt(static_cast<il2cpp_array_size_t>(L_41));

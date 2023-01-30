@@ -17501,7 +17501,7 @@ IL_004e:
 		L_7 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
 		NullCheck(L_7);
 		NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* L_8;
-		L_8 = VirtualFuncInvoker0< NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* >::Invoke(14 /* System.Globalization.NumberFormatInfo System.Globalization.CultureInfo::get_NumberFormat() */, L_7);
+		L_8 = VirtualFuncInvoker0< NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* >::Invoke(15 /* System.Globalization.NumberFormatInfo System.Globalization.CultureInfo::get_NumberFormat() */, L_7);
 		String_t* L_9;
 		L_9 = Single_ToString_m534852BD7949AA972435783D7B96D0FFB09F6D6A((&V_3), L_8, NULL);
 		V_0 = L_9;
@@ -24172,7 +24172,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyleSelectorHelper_FastLookup_mF436923D
 		String_t* L_1 = ___3_input;
 		NullCheck(L_0);
 		bool L_2;
-		L_2 = InterfaceFuncInvoker2< bool, String_t*, StyleComplexSelector_tE46C29F65FDBA48D3152781187401C8B55B7D8AD** >::Invoke(3 /* System.Boolean System.Collections.Generic.IDictionary`2<System.String,UnityEngine.UIElements.StyleComplexSelector>::TryGetValue(TKey,TValue&) */, IDictionary_2_tF4FE6DACA3812494193FC430AC514515FC710646_il2cpp_TypeInfo_var, L_0, L_1, (&V_0));
+		L_2 = InterfaceFuncInvoker2< bool, String_t*, StyleComplexSelector_tE46C29F65FDBA48D3152781187401C8B55B7D8AD** >::Invoke(7 /* System.Boolean System.Collections.Generic.IDictionary`2<System.String,UnityEngine.UIElements.StyleComplexSelector>::TryGetValue(TKey,TValue&) */, IDictionary_2_tF4FE6DACA3812494193FC430AC514515FC710646_il2cpp_TypeInfo_var, L_0, L_1, (&V_0));
 		V_1 = L_2;
 		bool L_3 = V_1;
 		if (!L_3)
@@ -25014,7 +25014,7 @@ IL_0084:
 		L_6 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
 		NullCheck(L_6);
 		NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* L_7;
-		L_7 = VirtualFuncInvoker0< NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* >::Invoke(14 /* System.Globalization.NumberFormatInfo System.Globalization.CultureInfo::get_NumberFormat() */, L_6);
+		L_7 = VirtualFuncInvoker0< NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* >::Invoke(15 /* System.Globalization.NumberFormatInfo System.Globalization.CultureInfo::get_NumberFormat() */, L_6);
 		String_t* L_8;
 		L_8 = Single_ToString_m534852BD7949AA972435783D7B96D0FFB09F6D6A(L_5, L_7, NULL);
 		String_t* L_9 = V_0;

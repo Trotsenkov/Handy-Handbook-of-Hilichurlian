@@ -46552,7 +46552,7 @@ IL_0076:
 		L_20 = Thread_get_CurrentCulture_mD011FDBB62CA34E83A1D1916628826ADAC85E7A6(L_19, NULL);
 		NullCheck(L_20);
 		NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* L_21;
-		L_21 = VirtualFuncInvoker0< NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* >::Invoke(14 /* System.Globalization.NumberFormatInfo System.Globalization.CultureInfo::get_NumberFormat() */, L_20);
+		L_21 = VirtualFuncInvoker0< NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* >::Invoke(15 /* System.Globalization.NumberFormatInfo System.Globalization.CultureInfo::get_NumberFormat() */, L_20);
 		NullCheck(L_21);
 		String_t* L_22;
 		L_22 = NumberFormatInfo_get_NumberDecimalSeparator_m7413FA8739F3FA6F5D61B54331DBF3232FC6BFC7_inline(L_21, NULL);

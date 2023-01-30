@@ -1555,7 +1555,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RewriteOperation_ToString_m013A60A9
 		L_0 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_0);
 		String_t* L_1;
-		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_0);
+		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_0);
 		V_0 = L_1;
 		String_t* L_2 = V_0;
 		NullCheck(L_2);

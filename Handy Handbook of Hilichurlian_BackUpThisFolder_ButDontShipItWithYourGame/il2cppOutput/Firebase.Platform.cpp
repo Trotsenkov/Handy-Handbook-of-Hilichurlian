@@ -806,19 +806,19 @@ struct UnityPlatformServices_t7D48ED4FE484C77B2D6E77155BF53BFFD6BC60B4  : public
 struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E  : public RuntimeObject
 {
 	// System.String System.Uri::m_String
-	String_t* ___m_String_13;
+	String_t* ___m_String_16;
 	// System.String System.Uri::m_originalUnicodeString
-	String_t* ___m_originalUnicodeString_14;
+	String_t* ___m_originalUnicodeString_17;
 	// System.UriParser System.Uri::m_Syntax
-	UriParser_t920B0868286118827C08B08A15A9456AF6C19D81* ___m_Syntax_15;
+	UriParser_t920B0868286118827C08B08A15A9456AF6C19D81* ___m_Syntax_18;
 	// System.String System.Uri::m_DnsSafeHost
-	String_t* ___m_DnsSafeHost_16;
+	String_t* ___m_DnsSafeHost_19;
 	// System.Uri/Flags System.Uri::m_Flags
-	uint64_t ___m_Flags_17;
+	uint64_t ___m_Flags_20;
 	// System.Uri/UriInfo System.Uri::m_Info
-	UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09* ___m_Info_18;
+	UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09* ___m_Info_21;
 	// System.Boolean System.Uri::m_iriParsing
-	bool ___m_iriParsing_19;
+	bool ___m_iriParsing_22;
 };
 
 // System.ValueType
@@ -1044,11 +1044,11 @@ struct UnityConfigExtensions_tA9B2A38D4A5718276B9A2E776C138969F0575152  : public
 struct UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690  : public SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0
 {
 	// System.Collections.Generic.Queue`1<System.Tuple`2<System.Threading.SendOrPostCallback,System.Object>> Firebase.Unity.UnitySynchronizationContext::queue
-	Queue_1_tBB890027A96D0D3343916455489502BC8FBEB73F* ___queue_2;
+	Queue_1_tBB890027A96D0D3343916455489502BC8FBEB73F* ___queue_7;
 	// Firebase.Unity.UnitySynchronizationContext/SynchronizationContextBehavoir Firebase.Unity.UnitySynchronizationContext::behavior
-	SynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA* ___behavior_3;
+	SynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA* ___behavior_8;
 	// System.Int32 Firebase.Unity.UnitySynchronizationContext::mainThreadId
-	int32_t ___mainThreadId_4;
+	int32_t ___mainThreadId_9;
 };
 
 // System.Void
@@ -1677,6 +1677,19 @@ struct String_t_StaticFields
 // System.String
 
 // System.Threading.SynchronizationContext
+struct SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0_StaticFields
+{
+	// System.Type System.Threading.SynchronizationContext::s_cachedPreparedType1
+	Type_t* ___s_cachedPreparedType1_1;
+	// System.Type System.Threading.SynchronizationContext::s_cachedPreparedType2
+	Type_t* ___s_cachedPreparedType2_2;
+	// System.Type System.Threading.SynchronizationContext::s_cachedPreparedType3
+	Type_t* ___s_cachedPreparedType3_3;
+	// System.Type System.Threading.SynchronizationContext::s_cachedPreparedType4
+	Type_t* ___s_cachedPreparedType4_4;
+	// System.Type System.Threading.SynchronizationContext::s_cachedPreparedType5
+	Type_t* ___s_cachedPreparedType5_5;
+};
 
 // System.Threading.SynchronizationContext
 
@@ -1732,23 +1745,23 @@ struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
 	// System.String System.Uri::SchemeDelimiter
 	String_t* ___SchemeDelimiter_12;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitialized
-	bool ___s_ConfigInitialized_20;
+	bool ___s_ConfigInitialized_23;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitializing
-	bool ___s_ConfigInitializing_21;
+	bool ___s_ConfigInitializing_24;
 	// System.UriIdnScope modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IdnScope
-	int32_t ___s_IdnScope_22;
+	int32_t ___s_IdnScope_25;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IriParsing
-	bool ___s_IriParsing_23;
+	bool ___s_IriParsing_26;
 	// System.Boolean System.Uri::useDotNetRelativeOrAbsolute
-	bool ___useDotNetRelativeOrAbsolute_24;
+	bool ___useDotNetRelativeOrAbsolute_27;
 	// System.Boolean System.Uri::IsWindowsFileSystem
-	bool ___IsWindowsFileSystem_25;
+	bool ___IsWindowsFileSystem_29;
 	// System.Object System.Uri::s_initLock
-	RuntimeObject* ___s_initLock_26;
+	RuntimeObject* ___s_initLock_30;
 	// System.Char[] System.Uri::HexLowerChars
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___HexLowerChars_27;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___HexLowerChars_34;
 	// System.Char[] System.Uri::_WSchars
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____WSchars_28;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____WSchars_35;
 };
 
 // System.Uri
@@ -1942,9 +1955,9 @@ struct UnityConfigExtensions_tA9B2A38D4A5718276B9A2E776C138969F0575152_StaticFie
 struct UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields
 {
 	// Firebase.Unity.UnitySynchronizationContext Firebase.Unity.UnitySynchronizationContext::_instance
-	UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690* ____instance_1;
+	UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690* ____instance_6;
 	// System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.ManualResetEvent> Firebase.Unity.UnitySynchronizationContext::signalDictionary
-	Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB* ___signalDictionary_6;
+	Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB* ___signalDictionary_11;
 };
 
 // Firebase.Unity.UnitySynchronizationContext
@@ -3517,19 +3530,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext__ctor_m02C29
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = Thread_get_ManagedThreadId_m74ACB74A574EE535C2B00B7D64F203A62E796B05(L_0, NULL);
-		__this->___mainThreadId_4 = L_1;
+		__this->___mainThreadId_9 = L_1;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = ___0_gameObject;
 		NullCheck(L_2);
 		SynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA* L_3;
 		L_3 = GameObject_AddComponent_TisSynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA_m8EBC722B106AE0F77C444EF03B1FC8478BF9E7D3(L_2, GameObject_AddComponent_TisSynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA_m8EBC722B106AE0F77C444EF03B1FC8478BF9E7D3_RuntimeMethod_var);
-		__this->___behavior_3 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___behavior_3), (void*)L_3);
-		SynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA* L_4 = __this->___behavior_3;
+		__this->___behavior_8 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___behavior_8), (void*)L_3);
+		SynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA* L_4 = __this->___behavior_8;
 		NullCheck(L_4);
 		Queue_1_tBB890027A96D0D3343916455489502BC8FBEB73F* L_5;
 		L_5 = SynchronizationContextBehavoir_get_CallbackQueue_m291C810E98C2BF128991603294E306DF9C54836E(L_4, NULL);
-		__this->___queue_2 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___queue_2), (void*)L_5);
+		__this->___queue_7 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___queue_7), (void*)L_5);
 		return;
 	}
 }
@@ -3546,7 +3559,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnitySynchronizationContext_t39352C0C5052D313
 	UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690* V_1 = NULL;
 	{
 		il2cpp_codegen_runtime_class_init_inline(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var);
-		UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690* L_0 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_1;
+		UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690* L_0 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_6;
 		V_0 = (bool)((((RuntimeObject*)(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690*)L_0) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_1 = V_0;
 		if (!L_1)
@@ -3564,7 +3577,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnitySynchronizationContext_t39352C0C5052D313
 IL_0019:
 	{
 		il2cpp_codegen_runtime_class_init_inline(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var);
-		UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690* L_3 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_1;
+		UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690* L_3 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_6;
 		V_1 = L_3;
 		goto IL_0021;
 	}
@@ -3587,7 +3600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext_Create_mF6BE
 	bool V_0 = false;
 	{
 		il2cpp_codegen_runtime_class_init_inline(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var);
-		UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690* L_0 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_1;
+		UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690* L_0 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_6;
 		V_0 = (bool)((((RuntimeObject*)(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690*)L_0) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_1 = V_0;
 		if (!L_1)
@@ -3601,8 +3614,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext_Create_mF6BE
 		NullCheck(L_3);
 		UnitySynchronizationContext__ctor_m02C29AFB8681306BC3D3761C68B805F815C169C9(L_3, L_2, NULL);
 		il2cpp_codegen_runtime_class_init_inline(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var);
-		((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_1 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_1), (void*)L_3);
+		((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_6 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_6), (void*)L_3);
 	}
 
 IL_001a:
@@ -3621,8 +3634,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext_Destroy_m909
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var);
-		((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_1 = (UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_1), (void*)(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690*)NULL);
+		((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_6 = (UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_6), (void*)(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690*)NULL);
 		return;
 	}
 }
@@ -3645,7 +3658,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ManualResetEvent_t63959486AA41A113A4353D0BF4A
 	ManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158* V_4 = NULL;
 	{
 		il2cpp_codegen_runtime_class_init_inline(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var);
-		Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB* L_0 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->___signalDictionary_6;
+		Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB* L_0 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->___signalDictionary_11;
 		V_1 = L_0;
 		V_2 = (bool)0;
 	}
@@ -3679,7 +3692,7 @@ IL_005c:
 				Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB* L_3 = V_1;
 				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_3, (&V_2), NULL);
 				il2cpp_codegen_runtime_class_init_inline(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var);
-				Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB* L_4 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->___signalDictionary_6;
+				Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB* L_4 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->___signalDictionary_11;
 				Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_5;
 				L_5 = Thread_get_CurrentThread_m6D4719F4993DB9200490531FF02D4076FF9CA9BD(NULL);
 				NullCheck(L_5);
@@ -3701,7 +3714,7 @@ IL_005c:
 				ManualResetEvent__ctor_m361CFCF6AC28BFFF5C8790DC2B5951791A1C4CEE(L_9, (bool)0, NULL);
 				V_0 = L_9;
 				il2cpp_codegen_runtime_class_init_inline(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var);
-				Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB* L_10 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->___signalDictionary_6;
+				Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB* L_10 = ((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->___signalDictionary_11;
 				Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_11;
 				L_11 = Thread_get_CurrentThread_m6D4719F4993DB9200490531FF02D4076FF9CA9BD(NULL);
 				NullCheck(L_11);
@@ -3818,7 +3831,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext_SendCoroutin
 		NullCheck(L_2);
 		L_2->___coroutine_1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___coroutine_1), (void*)L_3);
-		int32_t L_4 = __this->___mainThreadId_4;
+		int32_t L_4 = __this->___mainThreadId_9;
 		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_5;
 		L_5 = Thread_get_CurrentThread_m6D4719F4993DB9200490531FF02D4076FF9CA9BD(NULL);
 		NullCheck(L_5);
@@ -3832,7 +3845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext_SendCoroutin
 		}
 	}
 	{
-		SynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA* L_8 = __this->___behavior_3;
+		SynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA* L_8 = __this->___behavior_8;
 		U3CU3Ec__DisplayClass14_0_t4405F94B1E0528A72FA6BFDDB16D079BAF5B0C72* L_9 = V_0;
 		NullCheck(L_9);
 		Func_1_t5C7016A1FC354629920CF15E7F2AD5A6E6D06941* L_10 = L_9->___coroutine_1;
@@ -3895,7 +3908,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext_Post_m27CEEE
 	Queue_1_tBB890027A96D0D3343916455489502BC8FBEB73F* V_0 = NULL;
 	bool V_1 = false;
 	{
-		Queue_1_tBB890027A96D0D3343916455489502BC8FBEB73F* L_0 = __this->___queue_2;
+		Queue_1_tBB890027A96D0D3343916455489502BC8FBEB73F* L_0 = __this->___queue_7;
 		V_0 = L_0;
 		V_1 = (bool)0;
 	}
@@ -3927,7 +3940,7 @@ IL_0034:
 		{// begin try (depth: 1)
 			Queue_1_tBB890027A96D0D3343916455489502BC8FBEB73F* L_3 = V_0;
 			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_3, (&V_1), NULL);
-			Queue_1_tBB890027A96D0D3343916455489502BC8FBEB73F* L_4 = __this->___queue_2;
+			Queue_1_tBB890027A96D0D3343916455489502BC8FBEB73F* L_4 = __this->___queue_7;
 			SendOrPostCallback_t5C292A12062F24027A98492F52ECFE9802AA6F0E* L_5 = ___0_d;
 			RuntimeObject* L_6 = ___1_state;
 			Tuple_2_t9EC4E1A9EFB1ABACA7C36B1761CBDB693089F4DA* L_7 = (Tuple_2_t9EC4E1A9EFB1ABACA7C36B1761CBDB693089F4DA*)il2cpp_codegen_object_new(Tuple_2_t9EC4E1A9EFB1ABACA7C36B1761CBDB693089F4DA_il2cpp_TypeInfo_var);
@@ -3973,7 +3986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext_Send_m6287E4
 		NullCheck(L_1);
 		L_1->___d_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___d_0), (void*)L_2);
-		int32_t L_3 = __this->___mainThreadId_4;
+		int32_t L_3 = __this->___mainThreadId_9;
 		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_4;
 		L_4 = Thread_get_CurrentThread_m6D4719F4993DB9200490531FF02D4076FF9CA9BD(NULL);
 		NullCheck(L_4);
@@ -4044,13 +4057,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext__cctor_mA297
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_1 = (UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_1), (void*)(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690*)NULL);
+		((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_6 = (UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->____instance_6), (void*)(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690*)NULL);
 		Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB* L_0 = (Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB*)il2cpp_codegen_object_new(Dictionary_2_t685E1072D6BF5D03945108D75216A223A8EA7FBB_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Dictionary_2__ctor_m72D8077DA89EFD2BE1F61E6BE812DFB87A61CE5D(L_0, Dictionary_2__ctor_m72D8077DA89EFD2BE1F61E6BE812DFB87A61CE5D_RuntimeMethod_var);
-		((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->___signalDictionary_6 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->___signalDictionary_6), (void*)L_0);
+		((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->___signalDictionary_11 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_StaticFields*)il2cpp_codegen_static_fields_for(UnitySynchronizationContext_t39352C0C5052D313916EAAF93A309E188B745690_il2cpp_TypeInfo_var))->___signalDictionary_11), (void*)L_0);
 		return;
 	}
 }
@@ -4067,7 +4080,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext_U3CPostCorou
 	{
 		RuntimeObject* L_0 = ___0_x;
 		V_0 = ((Func_1_t5C7016A1FC354629920CF15E7F2AD5A6E6D06941*)Castclass((RuntimeObject*)L_0, Func_1_t5C7016A1FC354629920CF15E7F2AD5A6E6D06941_il2cpp_TypeInfo_var));
-		SynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA* L_1 = __this->___behavior_3;
+		SynchronizationContextBehavoir_t77EF1109836806C11E4F2C8ECF2867D9531FEBBA* L_1 = __this->___behavior_8;
 		Func_1_t5C7016A1FC354629920CF15E7F2AD5A6E6D06941* L_2 = V_0;
 		NullCheck(L_2);
 		RuntimeObject* L_3;
@@ -6628,7 +6641,7 @@ IL_0013:
 		FieldInfo_t* L_9 = V_0;
 		NullCheck(L_9);
 		RuntimeObject* L_10;
-		L_10 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_9, NULL);
+		L_10 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(26 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_9, NULL);
 		il2cpp_codegen_runtime_class_init_inline(FirebaseLogger_t17574FB770AB2CB02AF3459B2EF9D27FC9C24F42_il2cpp_TypeInfo_var);
 		bool L_11;
 		L_11 = FirebaseLogger_IsStackTraceLogTypeIncompatibleWithNativeLogs_m9D61E661685855C6CDC6C84B3DDDB1BF2754CF2B(((*(int32_t*)((int32_t*)(int32_t*)UnBox(L_10, StackTraceLogType_t2AD431F7181A4203AAE2D538963997CB3A917DF6_il2cpp_TypeInfo_var)))), NULL);
@@ -7037,7 +7050,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FirebaseEditorDispatcher_get_EditorIsPla
 		PropertyInfo_t* L_9 = V_2;
 		NullCheck(L_9);
 		RuntimeObject* L_10;
-		L_10 = VirtualFuncInvoker2< RuntimeObject*, RuntimeObject*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(25 /* System.Object System.Reflection.PropertyInfo::GetValue(System.Object,System.Object[]) */, L_9, NULL, (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)NULL);
+		L_10 = VirtualFuncInvoker2< RuntimeObject*, RuntimeObject*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(26 /* System.Object System.Reflection.PropertyInfo::GetValue(System.Object,System.Object[]) */, L_9, NULL, (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)NULL);
 		V_4 = ((*(bool*)((bool*)(bool*)UnBox(L_10, Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var))));
 		goto IL_0042;
 	}
@@ -7109,7 +7122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FirebaseEditorDispatcher_get_EditorIsPla
 		PropertyInfo_t* L_9 = V_2;
 		NullCheck(L_9);
 		RuntimeObject* L_10;
-		L_10 = VirtualFuncInvoker2< RuntimeObject*, RuntimeObject*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(25 /* System.Object System.Reflection.PropertyInfo::GetValue(System.Object,System.Object[]) */, L_9, NULL, (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)NULL);
+		L_10 = VirtualFuncInvoker2< RuntimeObject*, RuntimeObject*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(26 /* System.Object System.Reflection.PropertyInfo::GetValue(System.Object,System.Object[]) */, L_9, NULL, (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)NULL);
 		V_4 = ((*(bool*)((bool*)(bool*)UnBox(L_10, Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var))));
 		goto IL_0042;
 	}
@@ -7331,12 +7344,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FirebaseEditorDispatcher_ListenToPlaySta
 		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t*)L_19);
 		NullCheck(L_16);
 		MethodInfo_t* L_20;
-		L_20 = VirtualFuncInvoker1< MethodInfo_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(42 /* System.Reflection.MethodInfo System.Reflection.MethodInfo::MakeGenericMethod(System.Type[]) */, L_16, L_18);
+		L_20 = VirtualFuncInvoker1< MethodInfo_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(43 /* System.Reflection.MethodInfo System.Reflection.MethodInfo::MakeGenericMethod(System.Type[]) */, L_16, L_18);
 		V_6 = L_20;
 		EventInfo_t* L_21 = V_2;
 		NullCheck(L_21);
 		Type_t* L_22;
-		L_22 = VirtualFuncInvoker0< Type_t* >::Invoke(19 /* System.Type System.Reflection.EventInfo::get_EventHandlerType() */, L_21);
+		L_22 = VirtualFuncInvoker0< Type_t* >::Invoke(21 /* System.Type System.Reflection.EventInfo::get_EventHandlerType() */, L_21);
 		MethodInfo_t* L_23 = V_6;
 		Delegate_t* L_24;
 		L_24 = Delegate_CreateDelegate_mE2117ED279628E4E63D357AFAB3653DD909CB2D7(L_22, NULL, L_23, NULL);
@@ -7353,7 +7366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FirebaseEditorDispatcher_ListenToPlaySta
 		EventInfo_t* L_27 = V_2;
 		Delegate_t* L_28 = V_7;
 		NullCheck(L_27);
-		VirtualActionInvoker2< RuntimeObject*, Delegate_t* >::Invoke(21 /* System.Void System.Reflection.EventInfo::AddEventHandler(System.Object,System.Delegate) */, L_27, NULL, L_28);
+		VirtualActionInvoker2< RuntimeObject*, Delegate_t* >::Invoke(23 /* System.Void System.Reflection.EventInfo::AddEventHandler(System.Object,System.Delegate) */, L_27, NULL, L_28);
 		goto IL_00a6;
 	}
 
@@ -7362,7 +7375,7 @@ IL_009a:
 		EventInfo_t* L_29 = V_2;
 		Delegate_t* L_30 = V_7;
 		NullCheck(L_29);
-		VirtualActionInvoker2< RuntimeObject*, Delegate_t* >::Invoke(20 /* System.Void System.Reflection.EventInfo::RemoveEventHandler(System.Object,System.Delegate) */, L_29, NULL, L_30);
+		VirtualActionInvoker2< RuntimeObject*, Delegate_t* >::Invoke(22 /* System.Void System.Reflection.EventInfo::RemoveEventHandler(System.Object,System.Delegate) */, L_29, NULL, L_30);
 	}
 
 IL_00a6:
@@ -7537,7 +7550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FirebaseEditorDispatcher_AddRemoveCallba
 		FieldInfo_t* L_3 = ___0_eventField;
 		NullCheck(L_3);
 		RuntimeObject* L_4;
-		L_4 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_3, NULL);
+		L_4 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(26 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_3, NULL);
 		V_1 = ((Delegate_t*)IsInstClass((RuntimeObject*)L_4, Delegate_t_il2cpp_TypeInfo_var));
 		bool L_5 = ___3_add;
 		V_2 = L_5;
@@ -7551,7 +7564,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FirebaseEditorDispatcher_AddRemoveCallba
 		FieldInfo_t* L_7 = ___0_eventField;
 		NullCheck(L_7);
 		Type_t* L_8;
-		L_8 = VirtualFuncInvoker0< Type_t* >::Invoke(16 /* System.Type System.Reflection.FieldInfo::get_FieldType() */, L_7);
+		L_8 = VirtualFuncInvoker0< Type_t* >::Invoke(17 /* System.Type System.Reflection.FieldInfo::get_FieldType() */, L_7);
 		RuntimeObject* L_9 = ___2_target;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = ___1_callback;
 		NullCheck(L_10);
@@ -7606,7 +7619,7 @@ IL_0060:
 		FieldInfo_t* L_23 = ___0_eventField;
 		NullCheck(L_23);
 		Type_t* L_24;
-		L_24 = VirtualFuncInvoker0< Type_t* >::Invoke(16 /* System.Type System.Reflection.FieldInfo::get_FieldType() */, L_23);
+		L_24 = VirtualFuncInvoker0< Type_t* >::Invoke(17 /* System.Type System.Reflection.FieldInfo::get_FieldType() */, L_23);
 		RuntimeObject* L_25 = ___2_target;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_26 = ___1_callback;
 		NullCheck(L_26);
