@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "331462649127",
+    "project_id": "handy-handbook-of-hilichurlian",
+    "storage_bucket": "handy-handbook-of-hilichurlian.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331462649127:android:a82fa7b025cea61a273502",
+        "android_client_info": {
+          "package_name": "com.Kolbaser.Handy_Handbook_of_Hilichurlian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331462649127-jhgsgqlp5pksf5tov5aolnfvg5b29tld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-SvIVm9LSi2BbWLnAjlKFgkJf4TL1BkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331462649127-jhgsgqlp5pksf5tov5aolnfvg5b29tld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
