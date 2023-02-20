@@ -31,7 +31,7 @@ public class MenuFBStarter : MonoBehaviour
     void DrawButtons()
     {
         GameObject lessonButtonPrefab = Resources.Load<GameObject>("LessonButton");
-        gameObject.transform.Find("Text (TMP)").gameObject.SetActive(false);
+        gameObject.transform.Find("Loading").gameObject.SetActive(false);
         for (byte i = 0; i < lsns.Length; )
         {
             var button = Instantiate(lessonButtonPrefab, gameObject.transform);
