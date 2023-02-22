@@ -3,18 +3,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using Firebase.RemoteConfig;
-using System;
 using Random = UnityEngine.Random;
-using UnityEngine.Localization.Tables;
-using UnityEngine.Localization.Settings;
-using UnityEngine.Localization;
 
 public class CheckAnswer : MonoBehaviour
 {
+    public static CheckAnswer Instance { get; private set; }
     GameObject ButtonPrefab;
-    static Transform canvas;
     [SerializeField] private GameObject win;
     [SerializeField] private GameObject lose;
     static AudioClip winClip, loseClip, endClip;
@@ -33,17 +28,19 @@ public class CheckAnswer : MonoBehaviour
 
     public static List<quest> quests = new List<quest>();
 
-    void Start()
+    void Awake()
     {
+        Instance = this;
+
         FirebaseController.SendRequest(new string[] { lsnKey });
         winClip = Resources.Load<AudioClip>("Win");
         loseClip = Resources.Load<AudioClip>("Lose");
         endClip = Resources.Load<AudioClip>("End Song");
 
-        canvas = transform;
         ButtonPrefab = Resources.Load<GameObject>("AnswerButton");
         StartCoroutine(GetQuests());
     }
+
     IEnumerator GetQuests()
     {
         while (FirebaseController.FbStatus != FirebaseStatus.Connected)
@@ -57,8 +54,8 @@ public class CheckAnswer : MonoBehaviour
                 string[] y = x[i].Split(':');
                 quests.Add(new quest() { question = y[0], answers = new List<string>(y[1].Split(';')) });
             }
-        canvas.Find("Loading").gameObject.SetActive(false);
-        canvas.Find("Game").gameObject.SetActive(true);
+        transform.Find("Loading").gameObject.SetActive(false);
+        transform.Find("Game").gameObject.SetActive(true);
         SetQuestions();
     }
 
@@ -66,13 +63,13 @@ public class CheckAnswer : MonoBehaviour
     {
         if (quests.Count == 0)
         {
-            canvas.GetComponent<CheckAnswer>().questText.text = winText;
-            canvas.GetComponent<AudioSource>().clip = endClip;
-            canvas.GetComponent<AudioSource>().Play();
+            questText.text = winText;
+            GetComponent<AudioSource>().clip = endClip;
+            GetComponent<AudioSource>().Play();
             return;
         }
         current = quests[Random.Range(0, quests.Count)];
-        canvas.GetComponent<CheckAnswer>().questText.text = current.question;
+        questText.text = current.question;
         List<string> answers = new List<string>(current.answers);
         buttons = new List<Button>();
         int n = 0;
@@ -80,29 +77,30 @@ public class CheckAnswer : MonoBehaviour
         {
             string s;
             answers.Remove(s = answers[Random.Range(0, answers.Count)]);
-            GameObject button = Instantiate(ButtonPrefab, new Vector3(n * 200 + 150, 500), new Quaternion(), canvas);
+            GameObject button = Instantiate(ButtonPrefab, new Vector3(n * 200 + 150, 500), new Quaternion(), transform);
             button.transform.GetChild(0).GetComponent<TMP_Text>().text = s;
             buttons.Add(button.GetComponent<Button>());
             n++;
         }
     }
 
-    public static void Check(string answer)
+    public void Check(string answer)
     {
-        foreach (Button button in canvas.GetComponent<CheckAnswer>().buttons)
+        foreach (Button button in buttons)
             button.interactable = false;
         if (current.answers[0] == answer)
         {
-            canvas.GetComponent<CheckAnswer>().win.SetActive(true);
-            canvas.GetComponent<AudioSource>().clip = winClip;
-            canvas.GetComponent<AudioSource>().Play();
+            win.SetActive(true);
+            GetComponent<AudioSource>().clip = winClip;
+            GetComponent<AudioSource>().Play();
             quests.Remove(current);
         }
         else
         {
-            canvas.GetComponent<AudioSource>().clip = loseClip;
-            canvas.GetComponent<AudioSource>().Play();
-            canvas.GetComponent<CheckAnswer>().lose.SetActive(true);
+            GetComponent<AudioSource>().clip = loseClip;
+            GetComponent<AudioSource>().Play();
+            lose.SetActive(true);
+            lose.transform.Find("Correct answer").GetComponent<TMP_Text>().text = current.answers[0];
         }
     }
 
@@ -110,8 +108,8 @@ public class CheckAnswer : MonoBehaviour
     {
         foreach (Button button in buttons)
             Destroy(button.gameObject);
-        canvas.GetComponent<CheckAnswer>().win.SetActive(false);
-        canvas.GetComponent<CheckAnswer>().lose.SetActive(false);
+        win.SetActive(false);
+        lose.SetActive(false);
         SetQuestions();
     }
 }
